@@ -1,0 +1,22 @@
+{
+  "name": "Clock",
+  "version": "1.0.0",
+  "description": "__MSG_pluginDesc__",
+  "manifest_version": 2,
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "http://*/*",
+    "https://*/*",
+    "contextMenus",
+    "notifications",
+    "webRequest",
+    "webRequestBlocking",
+    "storage"
+  ],
+  "default_locale": "zh_CN",
+  "browser_action": {
+    "default_title": "这是一个钟表Chrome插件",
+    "default_popup": "popup.html"
+  }
+}

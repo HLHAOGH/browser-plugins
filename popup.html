@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"></meta>
+  <title>Clock</title>
+  <style>
+    #clock {
+      margin: 5% auto;
+      width: 380px;
+      height: 380px;
+      border-radius: 50%;
+      background: #0096f7;
+      position: relative;
+      transform: rotate(-90deg);
+    }
+    #clock .bg {
+      width: 360px;
+      height: 360px;
+      border-radius: 50%;
+      background: #fff;
+      position: relative;
+      top: 10px;
+      left: 10px;
+    }
+    #clock .point {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -14px;
+      margin-top: -14px;
+    }
+    #clock #hour {
+      width: 80px;
+      height: 6px;
+      background: #000;
+      margin: 10px 0 0 15px;
+      transform-origin: 0 3px;
+      border-radius: 16px;
+    }
+    
+    #clock #minute {
+      width: 120px;
+      height: 4px;
+      background: #000;
+      margin: -5px 0 0 14px;
+      transform-origin: 0 3px;
+      border-radius: 12px;
+    }
+    #clock #second {
+      width: 150px;
+      height: 2px;
+      background: #0096f7;
+      margin: -5px 0 0 14px;
+      transform-origin: 0 3px;
+      border-radius: 6px;
+    }
+    #clock .point .circle {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #000;
+      position: absolute;
+      left: 9px;
+      top: -7px;
+    }
+    ul {
+      position: relative;
+      list-style-type: none;
+    }
+    #clock .number {
+      position: absolute;
+      font-size: 16px;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      text-align: center;
+      transform: rotate(90deg);
+    }
+    #clock .bg-line {
+      position: absolute;
+      left: 0%;
+      top: 180px;
+      transform-origin: 180px center;
+      width: 10px;
+      height: 2px;
+      background: #000;
+      text-align: center;
+    }
+    #clock .sm-line {
+      position: absolute;
+      left: 0%;
+      top: 180px;
+      transform-origin: 180px center;
+      width: 8px;
+      height: 2px;
+      background: #999;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="clock">
+    <div class="bg">
+      <ul></ul>
+      <div class="point">
+        <p id="hour"></p>
+        <p id="minute"></p>
+        <p id="second"></p>
+        <p class="circle"></p>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
